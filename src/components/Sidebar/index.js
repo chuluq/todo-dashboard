@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { links } from "constants/links";
 
 // icons
-import { ReactComponent as PlusIcon } from "../../assets/Plus.svg";
+import { ReactComponent as PlusIcon } from "assets/Plus.svg";
 
 // styles
 import styles from "./Sidebar.module.css";

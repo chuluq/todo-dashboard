@@ -1,0 +1,116 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.projectsTitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.75rem;
+  text-transform: capitalize;
+}
+
+.projectDetails {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 82px;
+}
+
+.projectsData {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+}
+.projectsDataContent {
+  display: flex;
+  column-gap: 1.5rem;
+}
+.teamTitle,
+.deadlineTitle {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text-secondary);
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+}
+.teamCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 238px;
+  height: 92px;
+  background-color: #e3ebff;
+  box-shadow: 0px 8px 24px rgba(15, 13, 35, 0.02);
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+.teamCardBtn {
+  background-color: var(--bg-primary);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.teamCardBtn svg {
+  width: 12px;
+  height: 12px;
+}
+.deadlineCard {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  background: #ffffff;
+  box-shadow: 0px 8px 24px rgba(15, 13, 35, 0.04);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  width: 238px;
+  height: 92px;
+}
+.deadlineDate,
+.deadlineTime {
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+
+.attachmentTitle {
+  font-weight: 700;
+  font-size: 1rem;
+}
+.attachmentList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 1.25rem;
+  overflow-y: auto;
+}
+
+.projectDescTitle {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.projectDescContent {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--dark-grey);
+}
+.projectDescContent span {
+  color: var(--yellow);
+}
+.projectTask {
+  margin-top: 2.5rem;
+}
+.projectTaskTitle {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.projectTaskList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}

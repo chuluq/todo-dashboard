@@ -4,7 +4,6 @@ import GoalsPage from "pages/goals";
 import CalendarPage from "pages/calendar";
 
 // icons
-// icons
 import { ReactComponent as HomeIcon } from "assets/Home.svg";
 import { ReactComponent as GoalsIcon } from "assets/Goals.svg";
 import { ReactComponent as CalendarIcon } from "assets/Calendar.svg";

@@ -1,0 +1,23 @@
+.teams {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.teamMember {
+  width: 40px;
+  height: 40px;
+}
+
+.teamMember:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 30px;
+}
+.teamMember:nth-child(3) {
+  position: absolute;
+  top: 0;
+  left: 60px;
+}
