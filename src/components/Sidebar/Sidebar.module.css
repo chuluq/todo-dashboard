@@ -1,0 +1,75 @@
+.sidebar {
+  height: 100%;
+  width: 292px;
+  padding-top: 76px;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.sidebarLinks {
+  display: flex;
+  flex-direction: column;
+}
+.sidebarLink svg {
+  width: 24px;
+  height: 24px;
+}
+.sidebarLink {
+  padding: 26px 64px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+.sidebarLink:hover {
+  background-color: var(--bg-primary);
+  color: #fff;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+/* need to fix stroke color */
+.sidebarLink:hover svg {
+  fill: #fff;
+  stroke: #f9c917;
+}
+
+.sidebarCta {
+  border: 2px solid var(--text-secondary);
+  border-radius: 1rem;
+  margin: 26px 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px;
+  cursor: pointer;
+  margin-top: auto;
+}
+.sidebarBtn {
+  background-color: var(--bg-primary);
+  border-radius: 1rem;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  outline: none;
+  padding: 20px;
+}
+.sidebarBtn svg {
+  background-color: var(--bg-primary);
+  border-radius: 1rem;
+  width: 18px;
+  height: 18px;
+}
+.sidebarBtnText {
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  font-weight: 700;
+}
