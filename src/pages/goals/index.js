@@ -1,6 +1,7 @@
 // components
 import TeamMember from "components/TeamMember";
 import Attachment from "components/Attachment";
+import Task from "components/Task";
 
 // icons
 import { ReactComponent as PlusIcon } from "assets/Plus.svg";
@@ -9,7 +10,6 @@ import { ReactComponent as DeadlineTimeIcon } from "assets/DeadlineTime.svg";
 
 // styles
 import styles from "./Goals.module.css";
-import Task from "components/Task";
 
 const GoalsPage = () => {
   return (

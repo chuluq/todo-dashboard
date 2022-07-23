@@ -1,0 +1,33 @@
+.progress {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+
+.progressBar,
+.percentage {
+  height: 8px;
+  border-radius: 0.5rem;
+}
+
+.progressBar {
+  background-color: #fff;
+}
+
+.percentage {
+  display: block;
+  background-color: var(--yellow);
+  width: 90%; /* percentage value */
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name,
+.number {
+  font-weight: 500;
+  font-size: 18px;
+}
