@@ -1,5 +1,8 @@
 import { useState } from "react";
 
+// components
+import ProfileMenu from "components/ProfileMenu";
+
 // icons
 import { ReactComponent as BellIcon } from "assets/Bell.svg";
 import { ReactComponent as SearchIcon } from "assets/Search.svg";
@@ -15,7 +18,6 @@ import avatar from "assets/avatar-1.png";
 
 // styles
 import styles from "./Header.module.css";
-import ProfileMenu from "components/ProfileMenu";
 
 const Header = () => {
   const [showProfileMenu, setShowProfileMenu] = useState(false);
@@ -42,7 +44,7 @@ const Header = () => {
           {/* Profile menu */}
           <div
             className={
-              showProfileMenu
+              !showProfileMenu
                 ? styles.headerProfileMenu
                 : `${styles.headerProfileMenu} ${styles.showProfileMenu}`
             }
