@@ -5,8 +5,11 @@ import CalendarPage from "pages/calendar";
 
 // icons
 import { ReactComponent as HomeIcon } from "assets/Home.svg";
+import { ReactComponent as HomeActiveIcon } from "assets/HomeActive.svg";
 import { ReactComponent as GoalsIcon } from "assets/Goals.svg";
+import { ReactComponent as GoalsActiveIcon } from "assets/GoalsActive.svg";
 import { ReactComponent as CalendarIcon } from "assets/Calendar.svg";
+import { ReactComponent as CalendarActiveIcon } from "assets/CalendarActive.svg";
 
 export const links = [
   {
@@ -15,6 +18,7 @@ export const links = [
     url: "/",
     element: <HomePage />,
     icon: <HomeIcon />,
+    activeIcon: <HomeActiveIcon />,
   },
   {
     id: 2,
@@ -22,6 +26,7 @@ export const links = [
     url: "/goals",
     element: <GoalsPage />,
     icon: <GoalsIcon />,
+    activeIcon: <GoalsActiveIcon />,
   },
   {
     id: 3,
@@ -29,5 +34,6 @@ export const links = [
     url: "/calendar",
     element: <CalendarPage />,
     icon: <CalendarIcon />,
+    activeIcon: <CalendarActiveIcon />,
   },
 ];

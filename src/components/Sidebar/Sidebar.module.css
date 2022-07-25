@@ -28,16 +28,15 @@
   align-items: center;
   column-gap: 12px;
 }
-.sidebarLink:hover {
+.activeLink {
   background-color: var(--bg-primary);
   color: #fff;
-  border-top-right-radius: 1rem;
-  border-bottom-right-radius: 1rem;
+  border-radius: 0px 17px 17px 0px;
+  pointer-events: none;
 }
-/* need to fix stroke color */
-.sidebarLink:hover svg {
-  fill: #fff;
-  stroke: #f9c917;
+.sidebarLink:hover {
+  background: rgba(34, 49, 81, 0.2);
+  border-radius: 0px 17px 17px 0px;
 }
 
 .sidebarCta {
