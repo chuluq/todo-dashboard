@@ -47,9 +47,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 4px;
+  padding: 4px 24px 4px 4px;
   cursor: pointer;
   margin-top: auto;
+  width: 190px;
 }
 .sidebarBtn {
   background-color: var(--bg-primary);
@@ -63,8 +64,6 @@
   padding: 20px;
 }
 .sidebarBtn svg {
-  background-color: var(--bg-primary);
-  border-radius: 1rem;
   width: 18px;
   height: 18px;
 }

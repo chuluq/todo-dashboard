@@ -17,7 +17,11 @@
 
 .pendingTask {
   margin-top: 1.25rem;
+  padding-right: 36px;
+  padding-bottom: 1.25rem;
   display: flex;
   flex-wrap: wrap;
   gap: 1.25rem;
+  overflow-y: auto;
+  max-height: 530px;
 }

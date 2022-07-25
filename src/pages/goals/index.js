@@ -10,8 +10,14 @@ import { ReactComponent as DeadlineTimeIcon } from "assets/DeadlineTime.svg";
 
 // styles
 import styles from "./Goals.module.css";
+import { useState } from "react";
 
 const GoalsPage = () => {
+  const someMoreText =
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, repellendus!";
+
+  const [moreText, setMoreText] = useState(false);
+
   return (
     <div className={styles.projects}>
       <h1 className={styles.projectsTitle}>UI Dashboard Projects</h1>
@@ -53,6 +59,17 @@ const GoalsPage = () => {
               <Attachment />
               <Attachment />
               <Attachment />
+              <Attachment />
+              <Attachment />
+              <Attachment />
+              <Attachment />
+              <Attachment />
+              <Attachment />
+              <Attachment />
+              <Attachment />
+              <Attachment />
+              <Attachment />
+              <Attachment />
             </div>
           </div>
         </div>
@@ -63,11 +80,19 @@ const GoalsPage = () => {
             Make your own design UI Dashboard for meeting now. Send your files
             not more than 200 mb. I will check it soon. Make your own design UI
             Dashboard for meeting now. Send your files not more than 200 mb. I
-            will check it soon. <span>Read more</span>
+            will check it soon. {moreText && someMoreText}{" "}
+            <span
+              className={styles.readMore}
+              onClick={() => setMoreText(!moreText)}
+            >
+              {!moreText ? "Read more" : "Read less"}
+            </span>
           </p>
           <div className={styles.projectTask}>
             <h3 className={styles.projectTaskTitle}>Task</h3>
             <div className={styles.projectTaskList}>
+              <Task />
+              <Task />
               <Task />
               <Task />
               <Task />

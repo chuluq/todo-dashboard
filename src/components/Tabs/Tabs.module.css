@@ -6,4 +6,22 @@
   font-family: var(--font-primary);
   font-weight: 500;
   font-size: 1rem;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+.activeTab {
+  color: var(--text-primary);
+}
+.activeTab::before {
+  transform: translateX(-50%);
+  border-radius: 100%;
+  position: absolute;
+  background: var(--yellow);
+  bottom: -10px;
+  height: 8px;
+  content: "";
+  width: 8px;
+  left: 50%;
 }
