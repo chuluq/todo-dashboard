@@ -54,22 +54,9 @@ const GoalsPage = () => {
           <div className={styles.attachment}>
             <h2 className={styles.attachmentTitle}>Attachments</h2>
             <div className={styles.attachmentList}>
-              <Attachment />
-              <Attachment />
-              <Attachment />
-              <Attachment />
-              <Attachment />
-              <Attachment />
-              <Attachment />
-              <Attachment />
-              <Attachment />
-              <Attachment />
-              <Attachment />
-              <Attachment />
-              <Attachment />
-              <Attachment />
-              <Attachment />
-              <Attachment />
+              <Attachment type="document" />
+              <Attachment type="picture" />
+              <Attachment type="document" />
             </div>
           </div>
         </div>

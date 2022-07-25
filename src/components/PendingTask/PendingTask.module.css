@@ -8,3 +8,25 @@
   flex-direction: column;
   row-gap: 1.25rem;
 }
+
+.card:active,
+.card:hover {
+  background-color: var(--bg-primary);
+  color: #fff;
+}
+
+.cardIcon {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cardIcon svg:last-child {
+  display: none;
+  cursor: pointer;
+}
+
+.card:active .cardIcon svg:last-child,
+.card:hover .cardIcon svg:last-child {
+  display: inline-block;
+}

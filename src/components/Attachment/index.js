@@ -1,15 +1,21 @@
 // icons
 import { ReactComponent as DocumentIcon } from "assets/Document.svg";
-// import { ReactComponent as PictureIcon } from "assets/Picture.svg";
+import { ReactComponent as PictureIcon } from "assets/Picture.svg";
 
 // styles
 import styles from "./Attachment.module.css";
 
-const Attachment = () => {
+const Attachment = ({ type }) => {
   return (
     <div className={styles.attachment}>
       <div className={styles.attachmentIcon}>
-        <DocumentIcon />
+        {type === "document" ? (
+          <DocumentIcon />
+        ) : type === "picture" ? (
+          <PictureIcon />
+        ) : (
+          <></>
+        )}
       </div>
       <div className={styles.attachmentText}>
         <h3 className={styles.attachmentName}>Preview.zip</h3>
